@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
           enabledBorder: OutlineInputBorder(
             borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             borderSide:
-            BorderSide(color: (isLoginSuccess) ? Colors.blue : Colors.red),
+                BorderSide(color: (isLoginSuccess) ? Colors.blue : Colors.red),
           ),
         ),
       ),
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
           enabledBorder: OutlineInputBorder(
             borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             borderSide:
-            BorderSide(color: (isLoginSuccess) ? Colors.blue : Colors.red),
+                BorderSide(color: (isLoginSuccess) ? Colors.blue : Colors.red),
           ),
         ),
       ),
@@ -83,8 +83,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _loginButton(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 0,vertical: 20),
-
+      padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
       child: MaterialButton(
         color: Colors.blue,
         onPressed: () {
@@ -114,7 +113,6 @@ class _LoginPageState extends State<LoginPage> {
   Widget _forgotPassword() {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 10),
-
       child: TextButton(
         onPressed: () {},
         child: const Text("Forgot Password"),
@@ -133,7 +131,7 @@ class LogoImageAssets extends StatelessWidget {
     Image image = Image(image: assetImage, height: 100, width: 100);
     return Container(
       child: image,
-      padding: const EdgeInsets.symmetric(horizontal: 0,vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 30),
     );
   }
 }
